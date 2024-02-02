@@ -1,6 +1,6 @@
 {
   "name": "nxt-cl",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c"
@@ -8,7 +8,10 @@
   "repository": {
     "url": "https://github.com/Akash007670/nxt-cl"
   },
-  "keywords": [],
+  "keywords": [
+    "React.js",
+    "Component Library"
+  ],
   "author": "Akash Kumar",
   "license": "MIT",
   "bugs": {
@@ -29,6 +32,8 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.70.0",
+    "stylelint": "^16.2.1",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
