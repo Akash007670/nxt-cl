@@ -1,21 +1,21 @@
 {
-  "name": "@Akash007670/nxt-cl",
-  "version": "1.0.1",
+  "name": "@akash007670/nxt-cl",
+  "version": "1.0.3",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akash007670/Nxt-UI.git"
+    "url": "https://github.com/Akash007670/nxt-cl"
   },
   "keywords": [],
   "author": "Akash Kumar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Akash007670/Nxt-UI/issues"
+    "url": "https://github.com/Akash007670/nxt-cl"
   },
-  "homepage": "https://github.com/Akash007670/Nxt-UI#readme",
+  "homepage": "https://github.com/Akash007670/nxt-cl",
   "devDependencies": {
     "@babel/preset-react": "^7.23.3",
     "@rollup/plugin-commonjs": "^25.0.7",
