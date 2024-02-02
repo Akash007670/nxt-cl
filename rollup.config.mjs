@@ -4,6 +4,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
+import sass from "rollup-plugin-sass";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json" assert { type: "json" };
 
 export default [
@@ -26,6 +28,7 @@ export default [
         plugins: [],
         minimize: true,
       }),
+      peerDepsExternal(),
       resolve(),
       commonjs(),
       terser(),
@@ -35,6 +38,6 @@ export default [
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [dts()],
+    plugins: [dts(), sass({ insert: true })],
   },
 ];
