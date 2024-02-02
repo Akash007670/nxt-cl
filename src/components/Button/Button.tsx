@@ -2,12 +2,12 @@ import React from "react";
 
 export interface IButtonProps {
   label: string;
-  clasName?: string;
+  cn?: string;
 }
 
 const Button = (props: IButtonProps) => {
-  const { label, clasName } = props;
-  return <button className={`${clasName}`}>{label}</button>;
+  const { label, cn } = props;
+  return <button className={`${cn}`}>{label}</button>;
 };
 
 export default Button;

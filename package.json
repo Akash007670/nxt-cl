@@ -1,12 +1,11 @@
 {
-  "name": "@akash007670/nxt-cl",
-  "version": "1.0.3",
+  "name": "nxt-cl",
+  "version": "1.0.4",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c"
   },
   "repository": {
-    "type": "git",
     "url": "https://github.com/Akash007670/nxt-cl"
   },
   "keywords": [],
@@ -42,8 +41,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Akash007670"
-  }
+  "types": "dist/index.d.ts"
 }
