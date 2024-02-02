@@ -1,5 +1,5 @@
 {
-  "name": "nxt-ui",
+  "name": "@Akash007670/nxt-cl",
   "version": "1.0.0",
   "description": "React Component Library",
   "scripts": {
@@ -42,5 +42,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Akash007670"
+  }
 }
