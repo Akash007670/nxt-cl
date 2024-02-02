@@ -1,6 +1,6 @@
 {
   "name": "@Akash007670/nxt-cl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c"
