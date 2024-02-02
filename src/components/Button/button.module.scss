@@ -5,4 +5,10 @@
   padding: 10px 12px;
   cursor: pointer;
   outline: none;
+  background-color: rgb(48, 48, 222);
+  border-radius: 8px;
+
+  &:hover {
+    background-color: rgb(62, 62, 226);
+  }
 }

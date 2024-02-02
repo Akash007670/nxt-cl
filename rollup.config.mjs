@@ -25,20 +25,22 @@ export default [
     ],
     plugins: [
       postcss({
-        plugins: [],
+        config: "./postcss.config.js",
         minimize: true,
+        extract: true,
       }),
       peerDepsExternal(),
       resolve(),
       commonjs(),
       terser(),
       typescript({ tsconfig: "./tsconfig.json" }),
+      sass({ insert: true }),
     ],
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [dts(), sass({ insert: true })],
+    plugins: [dts()],
     external: [/\.scss$/],
   },
 ];
