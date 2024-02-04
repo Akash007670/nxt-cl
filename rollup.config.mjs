@@ -32,9 +32,9 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      terser(),
+      sass({ insert: true, include: "**/*.scss" }),
       typescript({ tsconfig: "./tsconfig.json" }),
-      sass({ insert: true }),
+      terser(),
     ],
   },
   {
