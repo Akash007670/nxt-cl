@@ -1,6 +1,6 @@
 {
   "name": "nxt-cl",
-  "version": "1.0.9",
+  "version": "1.1.6",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c",
@@ -26,7 +26,7 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
-    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -50,11 +50,14 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.4.38",
     "postcss-preset-env": "^9.3.0",
     "postcss-scss": "^4.0.9",
     "react-dom": "^18.2.0",
-    "rollup": "^4.9.6",
-    "rollup-plugin-dts": "^6.1.0",
+    "rollup": "^4.18.0",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-import-css": "^3.5.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.21",
@@ -63,7 +66,7 @@
     "storybook": "^7.6.12",
     "style-loader": "^3.3.4",
     "stylelint": "^16.2.1",
-    "tslib": "^2.6.2",
+    "tslib": "^2.6.3",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
@@ -77,8 +80,5 @@
     "README.md",
     "LICENSE"
   ],
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "react-feather": "^2.0.10"
-  }
+  "types": "dist/index.d.ts"
 }

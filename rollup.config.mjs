@@ -4,9 +4,12 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
-import sass from "rollup-plugin-sass";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json" assert { type: "json" };
+import autoprefixer from "autoprefixer";
+// import css from "rollup-plugin-import-css";
+// import css from "rollup-plugin-css-only";
+import postcssPresetEnv from "postcss-preset-env";
 
 export default [
   {
@@ -24,16 +27,21 @@ export default [
       },
     ],
     plugins: [
-      postcss({
-        config: "./postcss.config.js",
-        minimize: true,
-        extract: true,
-      }),
       peerDepsExternal(),
-      resolve(),
+      resolve({
+        extensions: [".css"],
+      }),
       commonjs(),
-      sass({ insert: true, include: "**/*.scss" }),
       typescript({ tsconfig: "./tsconfig.json" }),
+      postcss({
+        plugins: [postcssPresetEnv(), autoprefixer()],
+        autoModules: false,
+        extensions: [".css"],
+        extract: "index.css",
+        sourceMap: true,
+        minimize: true,
+        modules: false,
+      }),
       terser(),
     ],
   },
@@ -41,6 +49,6 @@ export default [
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.scss$/],
+    external: [/\.css$/],
   },
 ];
