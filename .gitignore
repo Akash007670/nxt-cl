@@ -5,3 +5,4 @@
 *.log
 .npmignore
 tsconfig.json
+rollup.config.mjs
