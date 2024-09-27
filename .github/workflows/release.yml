@@ -39,11 +39,10 @@ jobs:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
     steps:
       - id: build-publish
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
           path: storybook-static
+          install_command: npm i
+          build_command: npm run build-storybook
