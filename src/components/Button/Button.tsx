@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonHTMLAttributes, ReactNode, forwardRef } from "react";
-import "./button.css";
+import "./Button.css";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   btnText: string;
   size?: "sm" | "md" | "lg" | "xl";

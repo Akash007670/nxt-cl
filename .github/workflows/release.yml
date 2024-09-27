@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: "lts/*"
       - run: npm ci
+      - run: npx update-browserslist-db@latest
+        name: Build Package
       - run: npm run rollup
       - run: npm audit signatures
       - name: Release

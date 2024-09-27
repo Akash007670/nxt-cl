@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode, forwardRef, InputHTMLAttributes } from "react";
-import "./input.css";
+import "./Input.css";
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
