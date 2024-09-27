@@ -4,5 +4,5 @@
 # /src/components
 *.log
 .npmignore
-tsconfig.json
+# tsconfig.json
 rollup.config.mjs
