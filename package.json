@@ -1,12 +1,13 @@
 {
   "name": "nxt-cl",
-  "version": "1.2.2",
+  "version": "1.2.2-development",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "url": "https://github.com/Akash007670/nxt-cl"
@@ -64,6 +65,7 @@
     "rollup-plugin-sass": "^1.12.21",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "semantic-release": "^24.1.2",
     "storybook": "^7.6.12",
     "style-loader": "^3.3.4",
     "stylelint": "^16.2.1",
