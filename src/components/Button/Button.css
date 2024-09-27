@@ -1,0 +1,106 @@
+.button {
+  display: flex;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  padding: 10px 12px;
+  line-height: 1;
+}
+
+/* //Button sizes */
+
+.button.btn-sm {
+  font-size: 14px;
+  padding: 10px 12px;
+}
+.button.btn-md {
+  font-size: 16px;
+  padding: 12px 14px;
+}
+.button.btn-lg {
+  font-size: 18px;
+  padding: 14px 16px;
+}
+.button.btn-xl {
+  font-size: 20px;
+  padding: 16px 18px;
+}
+
+/* //Button border radius */
+
+.button.radius-none {
+  border-radius: 0px;
+}
+.button.radius-sm {
+  border-radius: 4px;
+}
+.button.radius-md {
+  border-radius: 8px;
+}
+.button.radius-lg {
+  border-radius: 12px;
+}
+.button.radius-xl {
+  border-radius: 16px;
+}
+
+/* //button variants */
+
+.button-primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.button-secondary {
+  color: white;
+  background-color: #7a5af8;
+}
+.button-ghost {
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.button-success {
+  background-color: #20c933;
+  color: #fff;
+}
+
+.button-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.button-info {
+  background-color: #2d7ff9;
+  color: #fff;
+}
+
+.button-outlined {
+  background: none;
+  border: 2px solid black;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.animate-spin {
+  height: 20px;
+  width: 20px;
+  color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
