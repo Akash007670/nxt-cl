@@ -22,7 +22,7 @@
 .input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-  border: 1px solid#2563eb;
+  /* border: 1px solid#2563eb; removing default focus color */
 }
 
 .input:disabled {
@@ -68,7 +68,7 @@
   transform: translateY(-1rem) scale(0.75);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: #2563eb; /* text-blue-600 in Tailwind */
+  /* color: #2563eb; removind default focus label */
 }
 
 .icon {
@@ -84,4 +84,47 @@
 
 .icon.end {
   right: 0px;
+}
+
+/* Rounded */
+
+.input.radius-none {
+  border-radius: 0px;
+}
+.input.radius-sm {
+  border-radius: 4px;
+}
+.input.radius-md {
+  border-radius: 8px;
+}
+.input.radius-lg {
+  border-radius: 12px;
+}
+
+/* Variant styles */
+.input:focus.input-primary {
+  border: 1px solid #1ea7fd;
+}
+.input:focus.input-secondary {
+  border: 1px solid #d1d5db;
+}
+.input:focus.input-success {
+  border: 1px solid #20c933;
+}
+.input:focus.input-danger {
+  border: 1px solid #dc3545;
+}
+
+/* Label focus */
+.peer:focus + .label.label-primary {
+  color: #1ea7fd;
+}
+.peer:focus + .label.label-secondary {
+  color: #d1d5db;
+}
+.peer:focus + .label.label-success {
+  color: #20c933;
+}
+.peer:focus + .label.label-danger {
+  color: #dc3545;
 }

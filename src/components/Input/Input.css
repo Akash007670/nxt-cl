@@ -59,17 +59,17 @@
 /* //Input variants */
 
 .input-primary {
-  border: 1.5px solid #1ea7fd;
+  border: 1px solid #1ea7fd;
 }
 .input-secondary {
-  border: 1.5px solid #d1d5db;
+  border: 1px solid #d1d5db;
 }
 .input-success {
-  border: 1.5px solid #20c933;
+  border: 1px solid #20c933;
 }
 
 .input-danger {
-  border: 1.5px solid #dc3545;
+  border: 1px solid #dc3545;
 }
 
 .input-disabled {
