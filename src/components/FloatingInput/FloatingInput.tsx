@@ -8,12 +8,12 @@ export interface FloatingInputProps
   endIcon?: ReactNode;
   className?: string;
   rounded?: "none" | "sm" | "md" | "lg";
-  variant?: "primary" | "secondary" | "success" | "danger";
+  variant?: "default" | "primary" | "secondary" | "success" | "danger";
 }
 
 const FloatingInput = forwardRef<HTMLInputElement, FloatingInputProps>(
   (
-    { rounded = "md", variant = "primary", className = "", type, ...props },
+    { rounded = "md", variant = "default", className = "", type, ...props },
     ref
   ) => {
     const { endIcon, label } = props;

@@ -16,6 +16,12 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+export const Default: Story = {
+  args: {
+    label: "Username",
+    rounded: "md",
+  },
+};
 export const Primary: Story = {
   args: {
     label: "Username",
