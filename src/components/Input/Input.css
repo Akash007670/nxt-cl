@@ -3,6 +3,7 @@
   position: relative;
   margin-top: 8px;
   width: 100%;
+  min-width: 240px;
 }
 
 .input {
@@ -13,6 +14,7 @@
   padding: 12px 32px 12px 12px;
   font-size: 14px;
   line-height: 20px;
+  border: 1px solid #d1d5db;
 }
 .input.icon-start {
   padding-left: 32px;
@@ -59,17 +61,17 @@
 /* //Input variants */
 
 .input-primary {
-  border: 1.5px solid #1ea7fd;
+  border: 1px solid #1ea7fd;
 }
 .input-secondary {
-  border: 1.5px solid #d1d5db;
+  border: 1px solid #c0119a;
 }
 .input-success {
-  border: 1.5px solid #20c933;
+  border: 1px solid #20c933;
 }
 
 .input-danger {
-  border: 1.5px solid #dc3545;
+  border: 1px solid #dc3545;
 }
 
 .input-disabled {

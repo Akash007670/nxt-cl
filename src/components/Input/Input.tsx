@@ -5,7 +5,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
   rounded?: "none" | "sm" | "md" | "lg";
-  variant?: "primary" | "secondary" | "success" | "danger";
+  variant?: "default" | "primary" | "secondary" | "success" | "danger";
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -14,7 +14,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       placeholder = "Enter here",
       startIcon,
       endIcon,
-      variant = "secondary",
+      variant = "default",
       rounded = "md",
     } = props;
 

@@ -16,9 +16,35 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Basic: Story = {
+export const Default: Story = {
   args: {
     label: "Username",
+    rounded: "md",
+  },
+};
+export const Primary: Story = {
+  args: {
+    label: "Username",
+    variant: "primary",
+    rounded: "md",
+  },
+};
+export const Secondary: Story = {
+  args: {
+    label: "Username",
+    variant: "secondary",
+  },
+};
+export const Success: Story = {
+  args: {
+    label: "Username",
+    variant: "success",
+  },
+};
+export const Danger: Story = {
+  args: {
+    label: "Username",
+    variant: "danger",
   },
 };
 

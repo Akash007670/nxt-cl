@@ -4,24 +4,29 @@ import "./floatingInput.css";
 
 export interface FloatingInputProps
   extends InputHTMLAttributes<HTMLInputElement> {
-  endIcon?: ReactNode;
   label: string;
+  endIcon?: ReactNode;
   className?: string;
+  rounded?: "none" | "sm" | "md" | "lg";
+  variant?: "default" | "primary" | "secondary" | "success" | "danger";
 }
 
 const FloatingInput = forwardRef<HTMLInputElement, FloatingInputProps>(
-  ({ className = "", type, ...props }, ref) => {
+  (
+    { rounded = "md", variant = "default", className = "", type, ...props },
+    ref
+  ) => {
     const { endIcon, label } = props;
     return (
-      <div className="input-container">
+      <div className="fl-input-container">
         <input
           type={type}
-          className={`input peer ${className}`}
+          className={`fl-input peer radius-${rounded} fl-input-${variant} ${className}`}
           placeholder=""
           ref={ref}
           {...props}
         />
-        <label htmlFor={label} className="label">
+        <label htmlFor={label} className={`label label-${variant}`}>
           {label}
         </label>
         {endIcon && <span className="icon end">{endIcon}</span>}

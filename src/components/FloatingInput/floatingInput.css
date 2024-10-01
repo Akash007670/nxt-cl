@@ -1,11 +1,12 @@
-.input-container {
+.fl-input-container {
   display: flex;
   position: relative;
   margin-top: 8px;
   width: 100%;
+  min-width: 240px;
 }
 
-.input {
+.fl-input {
   display: block;
   width: 100%;
   appearance: none;
@@ -16,20 +17,19 @@
   padding-top: 16px;
   font-size: 14px;
   line-height: 20px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d1d5db; /* Default grey border */
 }
 
-.input:focus {
+.fl-input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-  border: 1px solid#2563eb;
 }
 
-.input:disabled {
+.fl-input:disabled {
   cursor: not-allowed;
 }
 
-.input-disabled {
+.fl-input-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -68,7 +68,7 @@
   transform: translateY(-1rem) scale(0.75);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: #2563eb; /* text-blue-600 in Tailwind */
+  /* color: #2563eb; removind default focus label */
 }
 
 .icon {
@@ -84,4 +84,65 @@
 
 .icon.end {
   right: 0px;
+}
+
+/* Rounded */
+
+.fl-input.radius-none {
+  border-radius: 0px;
+}
+.fl-input.radius-sm {
+  border-radius: 4px;
+}
+.fl-input.radius-md {
+  border-radius: 8px;
+}
+.fl-input.radius-lg {
+  border-radius: 12px;
+}
+
+/* Variant styles */
+.fl-input.fl-input-primary {
+  border: 1px solid #d1d5db;
+}
+.fl-input-primary:focus {
+  border: 1px solid #1ea7fd;
+}
+
+.fl-input.fl-input-secondary {
+  border: 1px solid #d1d5db;
+}
+.fl-input-secondary:focus {
+  border: 1px solid #c0119a;
+}
+
+.fl-input.fl-input-success {
+  border: 1px solid #d1d5db;
+}
+.fl-input-success:focus {
+  border: 1px solid #20c933;
+}
+
+.fl-input.fl-input-danger {
+  border: 1px solid #dc3545;
+}
+.fl-input-danger:focus {
+  border: 1px solid #dc3545;
+}
+
+/* Label focus */
+.peer:focus + .label-primary {
+  color: #1ea7fd;
+}
+.peer:focus + .label-secondary {
+  color: #c0119a;
+}
+.peer:focus + .label-success {
+  color: #20c933;
+}
+.peer:focus + .label-danger {
+  color: #dc3545;
+}
+.peer + .label-danger {
+  color: #dc3545;
 }
