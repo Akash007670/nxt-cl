@@ -32,8 +32,6 @@ const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
     className,
     loading = false,
     disabled = false,
-    // isSearchable = false,
-    // multiselect = false,
     hasError = false,
   } = props;
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -105,7 +103,6 @@ const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
             disabled={disabled}
             style={{ cursor: "pointer" }}
             variant={hasError ? "danger" : "primary"}
-            // readOnly={isSearchable ? false : true}
             readOnly
           />
         </>
@@ -125,7 +122,6 @@ const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
               cursor: "pointer",
             }}
             variant={hasError ? "danger" : "default"}
-            // readOnly={isSearchable ? false : true}
             readOnly
           />
         </>
