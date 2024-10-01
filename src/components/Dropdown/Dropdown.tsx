@@ -104,7 +104,7 @@ export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
             onClick={toggleDropdown}
             disabled={disabled}
             style={{ cursor: "pointer" }}
-            variant={hasError ? "danger" : "default"}
+            variant={hasError ? "danger" : "primary"}
             readOnly={isSearchable ? false : true}
           />
         </>

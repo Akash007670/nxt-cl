@@ -18,10 +18,10 @@ const FloatingInput = forwardRef<HTMLInputElement, FloatingInputProps>(
   ) => {
     const { endIcon, label } = props;
     return (
-      <div className="input-container">
+      <div className="fl-input-container">
         <input
           type={type}
-          className={`input peer radius-${rounded} input-${variant} ${className}`}
+          className={`fl-input peer radius-${rounded} fl-input-${variant} ${className}`}
           placeholder=""
           ref={ref}
           {...props}

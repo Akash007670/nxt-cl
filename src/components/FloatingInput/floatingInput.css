@@ -1,4 +1,4 @@
-.input-container {
+.fl-input-container {
   display: flex;
   position: relative;
   margin-top: 8px;
@@ -6,7 +6,7 @@
   min-width: 240px;
 }
 
-.input {
+.fl-input {
   display: block;
   width: 100%;
   appearance: none;
@@ -17,20 +17,19 @@
   padding-top: 16px;
   font-size: 14px;
   line-height: 20px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d1d5db; /* Default grey border */
 }
 
-.input:focus {
+.fl-input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-  /* border: 1px solid#2563eb; removing default focus color */
 }
 
-.input:disabled {
+.fl-input:disabled {
   cursor: not-allowed;
 }
 
-.input-disabled {
+.fl-input-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -89,43 +88,61 @@
 
 /* Rounded */
 
-.input.radius-none {
+.fl-input.radius-none {
   border-radius: 0px;
 }
-.input.radius-sm {
+.fl-input.radius-sm {
   border-radius: 4px;
 }
-.input.radius-md {
+.fl-input.radius-md {
   border-radius: 8px;
 }
-.input.radius-lg {
+.fl-input.radius-lg {
   border-radius: 12px;
 }
 
 /* Variant styles */
-.input:focus.input-primary {
-  border: 1px solid #1ea7fd;
-}
-.input:focus.input-secondary {
+.fl-input.fl-input-primary {
   border: 1px solid #d1d5db;
 }
-.input:focus.input-success {
+.fl-input-primary:focus {
+  border: 1px solid #1ea7fd;
+}
+
+.fl-input.fl-input-secondary {
+  border: 1px solid #d1d5db;
+}
+.fl-input-secondary:focus {
+  border: 1px solid #c0119a;
+}
+
+.fl-input.fl-input-success {
+  border: 1px solid #d1d5db;
+}
+.fl-input-success:focus {
   border: 1px solid #20c933;
 }
-.input:focus.input-danger {
+
+.fl-input.fl-input-danger {
+  border: 1px solid #dc3545;
+}
+.fl-input-danger:focus {
   border: 1px solid #dc3545;
 }
 
 /* Label focus */
-.peer:focus + .label.label-primary {
+.peer:focus + .label-primary {
   color: #1ea7fd;
 }
-.peer:focus + .label.label-secondary {
-  color: #d1d5db;
+.peer:focus + .label-secondary {
+  color: #c0119a;
 }
-.peer:focus + .label.label-success {
+.peer:focus + .label-success {
   color: #20c933;
 }
-.peer:focus + .label.label-danger {
+.peer:focus + .label-danger {
+  color: #dc3545;
+}
+.peer + .label-danger {
   color: #dc3545;
 }
