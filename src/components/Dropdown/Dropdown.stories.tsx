@@ -1,7 +1,7 @@
 // import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 // import { Icons } from "@storybook/components";
-import { Dropdown, Option } from "./Dropdown";
+import Dropdown, { Option } from "./Dropdown";
 
 const meta = {
   title: "Nxt-cl/Dropdown",
