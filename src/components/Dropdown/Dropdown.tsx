@@ -18,12 +18,12 @@ export interface IDropdownProps {
   className?: string;
   loading?: boolean;
   disabled?: boolean;
-  isSearchable?: boolean;
-  multiselect?: boolean;
+  // isSearchable?: boolean;
+  // multiselect?: boolean;
   hasError?: boolean;
 }
 
-export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
+const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
   const {
     options = [],
     onSelect,
@@ -32,8 +32,8 @@ export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
     className,
     loading = false,
     disabled = false,
-    isSearchable = false,
-    multiselect = false,
+    // isSearchable = false,
+    // multiselect = false,
     hasError = false,
   } = props;
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -105,7 +105,8 @@ export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
             disabled={disabled}
             style={{ cursor: "pointer" }}
             variant={hasError ? "danger" : "primary"}
-            readOnly={isSearchable ? false : true}
+            // readOnly={isSearchable ? false : true}
+            readOnly
           />
         </>
       ) : (
@@ -124,7 +125,8 @@ export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
               cursor: "pointer",
             }}
             variant={hasError ? "danger" : "default"}
-            readOnly={isSearchable ? false : true}
+            // readOnly={isSearchable ? false : true}
+            readOnly
           />
         </>
       )}
@@ -146,3 +148,5 @@ export const Dropdown: React.FC<IDropdownProps> = (props: IDropdownProps) => {
     </div>
   );
 };
+
+export default Dropdown;
