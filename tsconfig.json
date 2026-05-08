@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "declaration": true,
     "emitDeclarationOnly": true,
     "declarationDir": "types",
+    "rootDir": "./src",
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "Node10",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
