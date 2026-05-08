@@ -1,0 +1,89 @@
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-slider {
+  display: block;
+  width: 44px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.toggle-slider::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+.toggle-input:checked ~ .toggle-slider {
+  background-color: #3b82f6;
+}
+
+.toggle-input:checked ~ .toggle-slider::after {
+  left: 22px;
+}
+
+.toggle-input:disabled ~ .toggle-slider {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.toggle-input:disabled ~ .toggle-slider::after {
+  background-color: #ccc;
+}
+
+/* Sizes */
+.toggle-sm .toggle-slider {
+  width: 36px;
+  height: 20px;
+}
+
+.toggle-sm .toggle-slider::after {
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-input:checked ~ .toggle-slider::after {
+  left: 18px;
+}
+
+.toggle-lg .toggle-slider {
+  width: 52px;
+  height: 28px;
+}
+
+.toggle-lg .toggle-slider::after {
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-lg .toggle-input:checked ~ .toggle-slider::after {
+  left: 26px;
+}
+
+.toggle-text {
+  color: #333;
+  font-size: 14px;
+  user-select: none;
+}
