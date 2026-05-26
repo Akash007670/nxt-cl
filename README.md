@@ -5,6 +5,8 @@ A modern, accessible, and fully-featured React component library built with Type
 [![npm version](https://img.shields.io/npm/v/nxt-cl?style=flat-square)](https://www.npmjs.com/package/nxt-cl)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
 
+> Release note: version `1.4.4` includes new UI components, Storybook improvements, and enhanced npm publish readiness.
+
 ## 🚀 Features
 
 - ✅ **22 Production-Ready Components** - Carefully crafted UI components
