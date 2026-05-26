@@ -1,6 +1,6 @@
 {
   "name": "nxt-cl",
-  "version": "1.2.2-development",
+  "version": "1.4.4",
   "description": "React Component Library",
   "scripts": {
     "rollup": "rollup -c",

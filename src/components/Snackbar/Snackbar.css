@@ -1,0 +1,71 @@
+.snackbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.95rem 1rem;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+  max-width: min(100%, 520px);
+}
+
+.snackbar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.snackbar-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.snackbar-message {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.snackbar-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.snackbar-action,
+.snackbar-close {
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: inherit;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.snackbar-close {
+  padding: 0.45rem 0.7rem;
+}
+
+.snackbar-action:hover,
+.snackbar-close:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.snackbar-default {
+  background: #111827;
+}
+
+.snackbar-success {
+  background: #166534;
+}
+
+.snackbar-warning {
+  background: #b45309;
+}
+
+.snackbar-danger {
+  background: #991b1b;
+}

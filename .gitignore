@@ -6,3 +6,5 @@
 .npmignore
 # tsconfig.json
 # rollup.config.mjs
+storybook-static
+coverage
