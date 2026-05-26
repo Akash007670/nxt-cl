@@ -1,0 +1,51 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.tag button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.tag-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.tag-success {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.tag-warning {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.tag-danger {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.tag-secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.tag-sm {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+}
+
+.tag-md {
+  font-size: 0.85rem;
+}
