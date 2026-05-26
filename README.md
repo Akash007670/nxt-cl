@@ -7,7 +7,7 @@ A modern, accessible, and fully-featured React component library built with Type
 
 ## 🚀 Features
 
-- ✅ **12 Production-Ready Components** - Carefully crafted UI components
+- ✅ **22 Production-Ready Components** - Carefully crafted UI components
 - 📦 **TypeScript Support** - Full type safety and IntelliSense
 - 🎨 **Customizable Styling** - CSS-based styling with easy customization
 - ♿ **Accessible** - Built with accessibility in mind
@@ -345,6 +345,25 @@ const [rating, setRating] = React.useState(0);
 - `size`: `'sm'` | `'md'` | `'lg'`
 - `readonly`: Disable interaction
 - `interactive`: Enable hover preview
+
+---
+
+### New Components
+
+A fresh set of reusable UI components has been added to the library:
+
+- `Avatar` — User avatar with image fallback and initials.
+- `Breadcrumb` — Navigation breadcrumbs for multi-step workflows.
+- `Modal` — Overlay dialog with title, body, and footer.
+- `Tabs` — Tabbed content panels with active state.
+- `Tooltip` — Hoverable helper text layer.
+- `ProgressBar` — Linear progress indicator.
+- `Pagination` — Page navigation buttons.
+- `Snackbar` — Temporary toast notifications.
+- `Tag` — Compact label badge with optional remove button.
+- `RadioGroup` — Grouped radio buttons with row/column layout.
+
+These components are exported from the library and ready to use in your React projects.
 
 ---
 
