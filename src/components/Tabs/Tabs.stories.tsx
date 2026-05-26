@@ -21,6 +21,8 @@ const sampleTabs = [
 export const Default: Story = {
   render: () => {
     const [activeId, setActiveId] = useState("overview");
-    return <Tabs tabs={sampleTabs} activeId={activeId} onChange={setActiveId} />;
+    return (
+      <Tabs tabs={sampleTabs} activeId={activeId} onChange={setActiveId} />
+    );
   },
 };

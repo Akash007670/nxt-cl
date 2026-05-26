@@ -51,11 +51,7 @@ const Snackbar: React.FC<SnackbarProps> = ({
       </div>
       <div className="snackbar-actions">
         {actionLabel && onAction && (
-          <button
-            type="button"
-            className="snackbar-action"
-            onClick={onAction}
-          >
+          <button type="button" className="snackbar-action" onClick={onAction}>
             {actionLabel}
           </button>
         )}
